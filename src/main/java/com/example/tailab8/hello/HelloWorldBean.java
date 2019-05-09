@@ -1,4 +1,4 @@
-package com.tailab8.tailab8.hello;
+package com.example.tailab8.hello;
 
 public class HelloWorldBean {
     private String message;

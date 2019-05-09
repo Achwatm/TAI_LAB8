@@ -1,4 +1,4 @@
-package com.tailab8.tailab8.post;
+package com.example.tailab8.post;
 
 import org.springframework.stereotype.Service;
 

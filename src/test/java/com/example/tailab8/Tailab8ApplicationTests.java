@@ -1,4 +1,4 @@
-package com.tailab8.tailab8;
+package com.example.tailab8;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

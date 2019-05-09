@@ -1,4 +1,4 @@
-package com.tailab8.tailab8.post;
+package com.example.tailab8.post;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,13 +18,13 @@ public class PostController {
         this.postService = postService;
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/api/posts")
     public List<Post> getAllPosts(){
         return postService.getAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/api/posts/{id}")
     public Post get(@PathVariable int id){
         return postService.get(id);

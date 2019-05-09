@@ -1,4 +1,4 @@
-package com.tailab8.tailab8.post;
+package com.example.tailab8.post;
 
 public class Post {
     private long id;

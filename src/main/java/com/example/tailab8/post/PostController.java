@@ -18,15 +18,5 @@ public class PostController {
         this.postService = postService;
     }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping("/api/posts")
-    public List<Post> getAllPosts(){
-        return postService.getAll();
-    }
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @GetMapping("/api/posts/{id}")
-    public Post get(@PathVariable int id){
-        return postService.get(id);
-    }
 }
